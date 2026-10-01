@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Trần Quốc Khánh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">TQK.Portfolio</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="smooth-link">Giới thiệu</a></li>
+                <li><a href="#skills" class="smooth-link">Kỹ năng</a></li>
+                <li><a href="#projects" class="smooth-link">Dự án</a></li>
+                <li><a href="#contact" class="smooth-link">Liên hệ</a></li>
+            </ul>
+            <div class="controls">
+                <button id="theme-toggle">🌙</button>
+                <button class="hamburger" id="hamburger">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="reveal">
+            <h2 class="section-title">Về Bản Thân</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>Xin chào, tôi là Trần Quốc Khánh</h1>
+                    <p>Tôi hiện đang theo học chuyên ngành Artificial Intelligence of Things (AIoT) tại Học viện Công nghệ Bưu chính Viễn thông. Tôi đam mê lập trình, phát triển phần mềm và khám phá các giải pháp công nghệ kết hợp giữa phần cứng và AI.</p>
+                    <br>
+                    <p>Bên cạnh việc học thuật, tôi cũng có kinh nghiệm thực tế trong lĩnh vực E-commerce và Affiliate Marketing. Ngoài ra, trong thời gian rảnh, tôi thường chơi guitar để giải trí và cân bằng cuộc sống.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal">
+            <h2 class="section-title">Kỹ Năng Của Tôi</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Ngôn ngữ Python</h3>
+                    <p>Chứng chỉ COSPRO Python</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <h3>E-commerce</h3>
+                    <p>Quản lý cửa hàng, GMV Max, Affiliate</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Ngoại ngữ & Khác</h3>
+                    <p>Tiếng Anh, Chơi Guitar</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal">
+            <h2 class="section-title">Dự Án Tiêu Biểu</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="python">Python / Thuật toán</button>
+                <button class="filter-btn" data-filter="aiot">AIoT</button>
+                <button class="filter-btn" data-filter="ecommerce">Thương mại điện tử</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="python">
+                    <div class="project-info">
+                        <span class="project-tag">Python / Thuật toán</span>
+                        <h3>Python Master Solver</h3>
+                        <p>Dự án giải quyết các bài toán thuật toán trên nền tảng 28Tech, áp dụng kiến thức từ kỳ thi COSPRO và cuộc thi Python Master.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="aiot">
+                    <div class="project-info">
+                        <span class="project-tag">AIoT</span>
+                        <h3>Smart Environment Monitor</h3>
+                        <p>Hệ thống giám sát môi trường thông minh ứng dụng AI kết hợp IoT, mô phỏng quá trình thu thập và phân tích dữ liệu thực tế.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-info">
+                        <span class="project-tag">Thương mại điện tử</span>
+                        <h3>Store Analytics & Optimize</h3>
+                        <p>Triển khai công cụ tối ưu hóa gian hàng trên TikTok Shop, quản lý chiến dịch Affiliate và phân tích hiệu quả của GMV Max.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+            <h2 class="section-title">Liên Hệ</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" class="form-control" placeholder="Nhập tên của bạn">
+                    <span class="error-msg" id="name-error">Vui lòng nhập họ tên!</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="example@gmail.com">
+                    <span class="error-msg" id="email-error">Email không hợp lệ!</span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tin nhắn</label>
+                    <textarea id="message" class="form-control" rows="5" maxlength="200" placeholder="Nhập lời nhắn..."></textarea>
+                    <span class="char-counter"><span id="char-count">0</span>/200</span>
+                    <span class="error-msg" id="msg-error">Vui lòng nhập tin nhắn!</span>
+                </div>
+                <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Trần Quốc Khánh. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
